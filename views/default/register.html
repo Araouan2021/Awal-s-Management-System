@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<h1> AWAL'S MANAGEMENT SYSTEM</h1>
+
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+h1 {
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+label {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+input {
+  color: teal;
+  margin-bottom: 30px;
+}
+
+body {
+  background: teal;
+}
+</style>
+
+<form action="{{=URL('store')}}" method="post">
+
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email">
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <input type="password" name="password">
+  </div>
+
+	<div>
+	  <label for="account name">Account Name</label>
+	  <input type="text" name="accountname">
+	</div>
+
+  <div>
+    <label for="account number">Account Number</label>
+    <input type="numbers" name="accountnumber">
+  </div>
+
+  <div>
+    <label for="bankname">Bank Name</label>
+    <input type="text" name="bankname">
+  </div>
+
+  <div>
+    <label for="bankbranch">Bank Branch</label>
+    <input type="text" name="bankbranch">
+  </div>
+
+  <div>
+    <input type="submit" value="Save User">
+  </div>
+
+
+  <div>
+    <input type="submit" value="Add account">
+  </div>
+
+  <div>
+    <input type="submit" value="See all Accounts">
+  </div>
+
+    <div>
+    <input type ="submit" value="Update Account">
+  </div>
+
+  <div>
+    <input type="submit" value="Delete Account">
+  </div>
+
+</form>
+</html>

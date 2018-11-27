@@ -1,0 +1,9 @@
+{{if users:}}
+  {{for user in users:}}
+    <p>
+    Email is {{=user.db_email}}, Password is {{=user.db_password}}, Account name is {{=user.db_accountname}}, Account number is {{=user.db_accountnumber}}, Bank name is {{=user.db_bankname}}, Bank branch is {{=user.db_bankbranch}}
+    </p>
+  {{pass}}
+{{else:}}
+  <h2>No Users Found</h2>
+{{pass}}
