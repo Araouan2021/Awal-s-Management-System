@@ -51,5 +51,19 @@ def authenticate():
 			return "User Logged in Successfully"
 	else:
 			return "User Not Found.  Please sign up"
+def edit():
+	return dict()
+
+def delete():
+	parameters = request.args
+	submitted_id = parameters[0]
+
+	if db(db.users.id == submitted_id).select():
+
+		db(db.users.id == submitted_id).delete()
+		return 'User Deleted Successfully'
+
+	else: 
+		return 'No User With the ID found'
 
 	
