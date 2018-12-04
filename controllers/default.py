@@ -53,7 +53,7 @@ def authenticate():
 			return "User Not Found.  Please sign up"
 def edit():
 	return dict()
-
+	
 def delete():
 	parameters = request.args
 	submitted_id = parameters[0]
