@@ -1,7 +1,7 @@
 {{if accounts:}}
   {{for account in accounts:}}
     <p>
-    Email is {{=account.db_email}}, Password is {{=account.db_password}}, Account name is {{=account.db_accountname}}, Account number is {{=account.db_accountnumber}}, Bank name is {{=account.db_bankname}}, Bank branch is {{=account.db_bankbranch}}
+    Account name is {{=account.db_accountname}}, Account number is {{=account.db_accountnumber}}, Bank name is {{=account.db_bankname}}, Bank branch is {{=account.db_bankbranch}}
     </p>
   {{pass}}
 {{else:}}
