@@ -1,0 +1,9 @@
+{{if accounts:}}
+  {{for account in accounts:}}
+    <p>
+    Account name is {{=account.db_accountname}}, Account number is {{=account.db_accountnumber}}, Bank name is {{=account.db_bankname}}, Bank branch is {{=account.db_bankbranch}}, 
+    </p>
+  {{pass}}
+{{else:}}
+  <h2>No Accounts Found</h2>
+{{pass}}

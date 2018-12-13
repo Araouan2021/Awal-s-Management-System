@@ -1,25 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{=URL('static', 'css/edit.css')}}"/>
+	
+</head>
+<body>
 <form method="POST" action="">
 	<div>
-	  <label>Account Name</label>
+	  <label for="accountname">Account Name</label>
 	  <input type="text" name="accountname" required>
 	</div>
 	<div>
-	  <label>Account Number</label>
+	  <label for="accountnumber">Account Number</label>
 	  <input type="text" name="accountnumber" required>
 	</div>
 	<div>
-	  <label>Bank Name</label>
+	  <label for="bankname">Bank Name</label>
 	  <input type="bankname" name="bankname" required>
 	</div>
 	<div>
-	  <label>Bank Branch</label>
+	  <label for="bankbranch">Bank Branch</label>
 	  <input type="bankbranch" name="bankbranch" required>
 	</div>
 	<div>
-	  <label>ID</label>
+	  <label for="id">ID</label>
 	  <input type="number" name="id" required>
     </div>
     <div>
       <input type="submit" value="Update Account"
     </div>
-    </form>
+</form>
+</body>
+</html>
+    
